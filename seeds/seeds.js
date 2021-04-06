@@ -20,5 +20,54 @@ let workoutSeed = [
           }
         ]
     },
-
+    {
+        day: new Date().setDate(new Date().getDate()-9),
+        exercises: [
+          {
+            type: "resistance",
+            name: "Lateral Pull",
+            duration: 20,
+            weight: 300,
+            reps: 10,
+            sets: 4
+          }
+        ]      
+    },
+    {
+        day: new Date().setDate(new Date().getDate()-8),
+        exercises: [
+          {
+            type: "resistance",
+            name: "Push Press",
+            duration: 25,
+            weight: 185,
+            reps: 8,
+            sets: 4
+          }
+        ]
+    },
+    {
+        day: new Date().setDate(new Date().getDate()-7),
+        exercises: [
+          {
+            type: "cardio",
+            name: "Running",
+            duration: 25,
+            distance: 4
+          }
+        ]
+    },
+    {
+        day: new Date().setDate(new Date().getDate()-6),
+        exercises: [
+          {
+            type: "resistance",
+            name: "Bench Press",
+            duration: 20,
+            weight: 285,
+            reps: 10,
+            sets: 4
+          }
+        ]
+    },
 ];
