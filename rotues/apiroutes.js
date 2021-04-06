@@ -36,5 +36,17 @@ module.exports = (app) => {
         });
     });
 
+    // This will put a new workout on the sashboard using its ID
+    app.put('/api/worouts/:is', (req, res) => {
+        db.dbWorkOutData.findByIdAndUpdate(req.params.id, {
+            $push: {exercises: req.body},
+        })
+        .then((data) => {
+            res.json(data);
+        })
+        .catch((err) => console.log(err));
+    })
+
+
     
 }
