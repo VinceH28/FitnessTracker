@@ -23,5 +23,18 @@ module.exports = (app) => {
         });
     })
 
+    //This will locate the most recent 10 workouts
+    app.get('/api/workouts/range', (req, res) => {
+        db.dbWorkOutData.find({})
+        .sort({day: -1})
+        .limit(10)
+        .then((dbWorkOutData) => {
+            re.json(dbWorkOutData);
+        })
+        .catch((err) => {
+            res.json(err);
+        });
+    });
+
     
 }
