@@ -21,8 +21,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
 });
 
 // Below are the routes the app will be using
-require("./routes/apiroutes.js")(app);
-require("./routes/htmlroutes.js")(app);
+require("./rotues/apiroutes")(app);
+require("./rotues/htmlroutes")(app);
 
 //Needed to run the app locally using localhost
 app.listen(PORT, () => {
