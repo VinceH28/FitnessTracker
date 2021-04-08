@@ -12,7 +12,7 @@ const workoutDataSchema = new Schema({
     exercises: [
         {
             name: {
-                type: string,
+                type: String,
                 trim: true,
                 require: ' You need an exercise name that is valid. ',
             },
