@@ -7,7 +7,7 @@ const workoutDataSchema = new Schema({
     // Each collection entry needs the input below:
     day: {
         type: Date,
-        defualt: () => new Date(),
+        defualt: Date.now(),
     },
     exercises: [
         {
